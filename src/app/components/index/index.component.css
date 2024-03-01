@@ -1,0 +1,6 @@
+.img{
+    height: 360px;
+    background-image: url(../../../assets/inet-header.jpg);
+    background-position: 50% center;
+    background-size: contain;
+}

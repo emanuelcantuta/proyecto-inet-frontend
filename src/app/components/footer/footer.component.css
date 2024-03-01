@@ -1,0 +1,52 @@
+footer{
+    background-color: #0e68af;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+h3{
+    padding-bottom: 10px;
+}
+
+a:hover{
+    color: rgb(186, 186, 186);
+}
+
+.footer-row1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0 0 0 25%;  
+}
+
+.footer-row2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:10px; 
+    border-top:solid #ccc thin; 
+    margin-top:10px; 
+}
+
+.row2-credits{
+    font-size: small;
+    width: 50%;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+}

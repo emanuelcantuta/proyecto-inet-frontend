@@ -1,0 +1,44 @@
+<div class="conteinerSearch">
+    <app-search (search) = "handleSearch($event)"></app-search>
+    <br>
+    <div class="select">
+        <select [(ngModel)] = "campo" title="campos">
+            <option value="nombre" (select)="true">Nombre</option>
+            <option value="direccion">Direccion</option>
+        </select>
+    </div>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Mail Institucional</th>
+            <th>Tipo De Oferta</th>
+            <th>Jurrisdiccion</th>
+            <th>Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let escuela of (escuelita | async) || [] | search:(filtro_valor | async) || '' : campo || '' | paginate: { itemsPerPage: 10, currentPage: p }">
+            <th>{{escuela.id}}</th>
+            <th>{{escuela.nombre}} </th>
+            <th>{{escuela.direccion}}</th>
+            <th>{{escuela.mailInstitucional}}</th>
+            <th>{{escuela.tipoOferta}}</th>
+            <th>{{escuela.jurisdiccion}}</th>
+            <th><button type="button" (click)="verDetalleEscuela(escuela.id)">Info</button></th>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+<div class="pagination-controls">
+    <pagination-controls    (pageChange)="p = $event"
+                            [responsive]="true"
+                            previousLabel="anterior"
+                            nextLabel="siguiente"
+    ></pagination-controls>
+</div>

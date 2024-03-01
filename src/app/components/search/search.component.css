@@ -1,0 +1,17 @@
+mat-form-field{
+    padding-top: 20px;
+    width: 1200px;
+}
+
+@media only screen and (min-width : 1268.670px) {
+    mat-form-field{
+        width: 1000px;
+    }
+}
+
+
+@media only screen and (max-width : 1268px) {
+    mat-form-field{
+        width: 500px;
+    }
+}

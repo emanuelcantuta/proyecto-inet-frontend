@@ -1,0 +1,77 @@
+header{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: #0E68AF;
+    display: flex;
+    width: 73%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width: 450px;
+    position: relative;
+    left: 18.3%;
+    margin:40px 0 30px 0;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+    width: 160px;
+}
+
+nav ul li:nth-child(1){
+    width: 200px;
+}
+
+nav ul li:nth-child(3){
+    width: 215px;
+}
+
+nav ul li:nth-child(4){
+    width: 200px;
+}
+
+nav ul li a{
+    display: block;
+    padding: 15px 25px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+nav ul .aplicaciones li{
+    display: block;
+}
+
+nav ul .aplicaciones{
+    width: 100%;
+    background-color: #5b97d4;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+nav ul li a:hover{
+    color:black
+}
+nav ul li a:active{
+    color: #0E68AF;
+}
+
+nav ul li:hover .aplicaciones{
+    display: block;
+}
+
